@@ -24,7 +24,11 @@ npm run serve
 
 Rien de particulier à faire, une github action va automatiquement build et upload l'application en ftp sur hostpoint.
 
-### Modifications à faire sur le code:
+### Modifications faites sur le code: (fichier unite.js)
 
 - rajouter une sizaine à cabéru
 - rajouter soméo comme troupe
+
+### Dépoloiement (Node.js 23.0.0)
+- npm install
+- NODE_OPTIONS=--openssl-legacy-provider npm run serve --fix (pour éviter le problème de compatibilité avec openssl 3) et les erreus de build
