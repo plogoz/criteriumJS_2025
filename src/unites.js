@@ -14,6 +14,7 @@ export const Unites = [
     { bid: 3, uid: 21, nom: 'Clairière', sexe: 'homme' },
     { bid: 4, uid: 22, nom: 'Cabéru', sexe: 'femme' },
     { bid: 4, uid: 23, nom: 'Chenaulaz', sexe: 'femme' },
+    {bid: 5, uid: 24, nom: 'Soméo', sexe: 'homme1'} // je sais pas quoi mettre (fin on verra. normalement, le classement est avec les louvetaux ??)
 ];
 
 export const branches = [
@@ -21,6 +22,7 @@ export const branches = [
     { bid: 2, nom: 'éclaireuses' },
     { bid: 3, nom: 'louveteaux' },
     { bid: 4, nom: 'louvettes' },
+    {bid: 5, nom: 'Soméo'} // raouté, à voir comment on intègre pour la course
 ];
 
 export const SousUnites = [
@@ -88,6 +90,8 @@ export const SousUnites = [
     { sid: 113, uid: 23, nom: 'Koalas(lvttes)' },
     { sid: 114, uid: 23, nom: 'Wombats' },
     { sid: 115, uid: 23, nom: 'Quokkas' },
+    {sid:116, uid:22, nom: 'Wallabies'},  // ajout des Wallabies !! on fait gaffe pour l'app
+    {sid:117, uid:24, nom: 'Soméo'}, // ajout de Soméo (normalement, comme ça, ça devrait marcher correctement)
 ];
 
 export const getUnite = uid => Unites.find(u => u.uid === uid);
